@@ -26,8 +26,7 @@ header > p {
 }
 
 .container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
 }
 
 section > h1 {
@@ -37,8 +36,12 @@ section > h1 {
 .container > section {
   padding: 2%;
   background: white;
-  margin: 5% auto;
   line-height: 1.6;
+  box-sizing: border-box;
+  flex-grow: 1;
+  width: 33%;
+  transition: order 3s;
+
 }
 
 @media (max-width:600px) {
@@ -52,4 +55,19 @@ section > h1 {
   .container {
     grid-template-columns: 1fr;
   }
+}
+
+.bottom {
+  order: 3;
+  transition: order 1s;
+}
+
+.first {
+  order:1;
+}
+.second {
+  order:2;
+}
+.third {
+  order:3;
 }
