@@ -26,3 +26,24 @@ header > p:last-child {
 .scout {
   padding-top: 20px;
 }
+
+.t-center {
+  text-align: center;
+}
+
+.podcast-header {
+  background-image: url('./images/header-bg.png');
+  background-size: cover;
+  padding: 20px;
+  text-align: center;
+  background-repeat: repeat-x;
+  display: flex;
+  align-items: center;
+}
+
+.podcast-header h1 {
+  margin-left: 1rem;
+  color: black;
+  font-size: 2.5em;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
