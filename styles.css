@@ -39,6 +39,7 @@ header > p:last-child {
   background-repeat: repeat-x;
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .podcast-header h1 {
